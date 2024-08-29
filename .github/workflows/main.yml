@@ -87,14 +87,14 @@ jobs:
 
     - name: Install dependencies
       run: |
-      cd frontend/
-      npm ci
+        cd frontend/
+        npm ci
 
     - name: Test frontend
       run: |
-      cd frontend/
-      npm run test
-
+        cd frontend/
+        npm run test
+ 
   build_frontend_and_push_to_docker_hub:
   name: Push frontend Docker image to Docker Hub
   runs-on: ubuntu-latest
